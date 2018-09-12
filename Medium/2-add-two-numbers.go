@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/add-two-numbers/description/
+
 package main
 
 import "fmt"
@@ -39,20 +41,15 @@ func main() {
 	list2_1 := &ListNode{7, nil}
 	list2_2 := &ListNode{3, nil}
 	list2_3 := &ListNode{9, nil}
-
-
+	
 	list1_1.Next = list1_2
 	list1_2.Next = list1_3
-
 	list2_1.Next = list2_2
 	list2_2.Next = list2_3
-
 	r := addTwoNumbers(list1_1, list2_1)
 
 	fmt.Println(r.Val)
 	fmt.Println(r.Next.Val)
 	fmt.Println(r.Next.Next.Val)
 	fmt.Println(r.Next.Next.Next.Val)
-
 }
-
