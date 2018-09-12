@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/two-sum/description/
+
 package main
 
 import "fmt"
@@ -14,15 +16,7 @@ func twoSum(nums []int, target int) []int {
 }
 
 func main() {
-	fmt.Println("Leetcode 1 - twoSum")
 	ns := []int{2, 4, 6, 8, 10}
 	r := twoSum(ns, 12)
 	fmt.Println(r)
 }
-
-
-
-
-
-
-
